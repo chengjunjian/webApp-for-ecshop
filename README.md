@@ -3,6 +3,10 @@ webApp-for-ecshop
 
 ecshop的手机网页版及安卓版及ios版。
 采用php + angular.js + bootstrap 
+![Alt text](http://iscript.github.io/temp/images/ecshop_demo1.jpg)
+![Alt text](http://iscript.github.io/temp/images/ecshop_demo2.png)
+![Alt text](http://iscript.github.io/temp/images/ecshop_demo3.png)
+
 
 
 
