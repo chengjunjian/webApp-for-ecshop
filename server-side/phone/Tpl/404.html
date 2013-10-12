@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>404错误</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style>
+body{margin:0;padding:0;font-size:14px;font-family:"宋体",Arial, Helvetica, sans-serif;}
+#content{width:650px;margin:30px auto;}
+#time{font-size:12px;color:red;}
+ol li{padding:10px;}
+p{color:#666;font-size:12px;width:300px;float:left;}
+p a{text-decoration:none;}
+</style>
+
+</head>
+<body>
+<div id="content">
+<h1>很抱歉，您要访问的页面不存在<img src="http://static.tieba.baidu.com/tb/editor/images/jd/j_0012.gif" /></h1>
+<ol>
+<li>请检查您输入的网址是否正确。</li>
+<li>部分内容可能已被删除。</li>
+<li>可能网站改版导致网站部分链接不可用</li>
+</ol>
+
+<p>页面将在<span id="time">10</span>秒后跳转至首页   &nbsp&nbsp&nbsp&nbsp<a href="#">去首页</a>&nbsp|&nbsp <a href="javascript:window.close();">关闭</a></p>
+</div>
+
+
+<script type="text/javascript"> 
+
+var count = 10;
+var time = document.getElementById("time");
+function jump()
+{   
+    time.innerHTML = count ;
+    count --;
+    
+    if(count == 0){
+        if(document.title=="404错误") location.href = "#";
+    }else{
+        setTimeout("jump()", 1000);
+    }    
+}
+setTimeout("jump()",1000);
+</script>
+
+
+</body>
+</html>
