@@ -17,6 +17,7 @@ ecshop的手机网页版及安卓版及ios版。
 var api_path = 'http://192.168.1.222/ecshop/yApi.php'; 	//这里指向ecshop目录下的yApi.php 
 var server_path = 'http://192.168.1.222/ecshop/';		//这里指向ecshop的根目录
 
+
 ###手机app端
 同上，修改app/index.html 里面的 api_path 和 server_path
 然后用phonegap打包成安卓app或苹果的app (不知道phonegap是什么的请百度~)  
