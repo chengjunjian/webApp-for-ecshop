@@ -2,7 +2,10 @@ webApp-for-ecshop
 =================
 
 ecshop的手机网页版及安卓版及ios版。  
-采用php + angular.js + bootstrap     
+采用php + angular.js + bootstrap [restful Api + angular]     
+在此基础上可以做其他商城的二次开发              
+具有精品推荐、搜索、分类列表、商品列表、登录、用户中心、商品详情、收藏商品、关于我们等功能      
+功能完善中。	      
 
 ![Alt text](http://iscript.github.io/temp/images/ecshop_demo1.jpeg)   
 
@@ -11,7 +14,7 @@ ecshop的手机网页版及安卓版及ios版。
 ![Alt text](http://iscript.github.io/temp/images/ecshop_demo3.png)
     
 
-          
+
 
 
 
