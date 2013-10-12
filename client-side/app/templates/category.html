@@ -1,0 +1,33 @@
+<div ng-include="'templates/header.html'"></div>
+<div class="blank10"></div>
+<div id="i_wrap">
+	<div ng-repeat="category in categories" >
+		<a class="list-group-item p{{$index}}"  ng-click="show({{$index}})" >
+			<img ng-src="images/category/{{$index}}.png" width="40px" height="40px" class="pull-left" class="img-rounded" style="margin-right:10px"/>
+			<h4 class="list-group-item-heading">{{category.name}}</h4>
+		
+			<p class="list-group-item-text" style="min-height:18px">
+				<!-- <span  ng-repeat="c in category.cat_id " class="f12 gray">{{c.name}} &nbsp/</span>-->
+		    </p> 
+		</a>
+
+	 	<ul class="list-group-item-text c{{$index}} allCateg" style="display:none;list-style:none;">
+		 	<li><a href="#/category/{{category.id}}">全部</a></li>
+		 	<li ng-repeat="c in category.cat_id ">
+		 		<a href="#/category/{{c.id}}" >{{c.name}}</a>
+		 		<a href="#/category/{{cc.id}}" ng-repeat="cc in c.cat_id" >{{cc.name}}</a>
+		 	</li> 	
+		</ul>
+	</div>
+</div>
+
+
+
+
+
+
+
+ 
+
+
+

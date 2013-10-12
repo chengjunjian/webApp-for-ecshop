@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html ng-app="y">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <title>淘易淘在线商城</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!--[if lte IE 8]>
+	<script type="text/javascript" src="js/es5-shim.min.js"></script>
+	<script type="text/javascript" src="js/html5shiv.js"></script>
+	<script src="js/json2.js"></script>
+	<script>
+	alert('your browser is IE ,please remove it');	
+	</script>
+	<![endif]-->
+    <script type="text/javascript" src="js/jquery-2.0.3.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/angular/angular.min.js"></script>
+    <script type="text/javascript" src="js/angular/angular-pack.js"></script>
+    <script type="text/javascript" src="js/angular/angular-loadingbar.js"></script>
+    <script type="text/javascript" src="js/angular/services.js"></script>
+    <script type="text/javascript" src="js/angular/controllers.js"></script>
+    <script type="text/javascript" src="js/angular/app.js"></script>
+    <script>
+        window.y = {};
+        var api_path = 'http://192.168.1.222/ecshop/yApi.php';
+        var server_path = 'http://192.168.1.222/ecshop/';
+    </script>
+    <body ng-cloak >
+        <div class="main">
+            <div ng-view class="view">
+            </div>
+        </div>
+        <noscript>设备不支持javascript</noscript>
+    </body>
+</html>

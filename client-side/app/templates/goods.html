@@ -1,0 +1,45 @@
+<div ng-include="'templates/header2.html'"></div>
+
+<div class="in-wrap">
+
+	<h4 class="f16">{{goods.goods_name}}</h4>
+	<img ng-src="{{server_path}}{{goods.goods_img}}" width="150px" height="150px" class="thumbnail"/>
+	<ul class="goods_info">
+		<li ng-model="goods_sn"><label>商品货号:</label>{{goods.goods_sn}}</li>
+		<li><label>商品品牌:</label>{{goods.goods_brand}}</li>
+		<li><del><label>市场价:</label>{{goods.market_price}}</del></li>
+		<li><label>本店价:</label><span class="f20 orange">{{goods.shop_price}}</span></li>
+		<li><label>关键字:</label>{{goods.keywords}}</li>
+	</ul>
+	<!--
+	<div ng-repeat="spe in goods.properties.spe" >
+		{{spe.name}}: 
+		<label ng-repeat="vspe in spe.values">
+			<input type="radio" ng-model="info" name="vsp" id="optionsRadios1" value="{{vspe.label}}" >
+			<span>{{vspe.label}} </span>
+		</label>
+	</div>
+
+	<tt>color = {{info}}</tt> 999<br/>
+	-->
+	<p>
+		<button class="btn btn-warning" type="button" ng-click="collect();">加入收藏</button>
+	  	 <button class="btn btn-primary" type="button" ng-click="addToCart()" >加入购物车</button> 
+	</p>
+	<!-- 
+	<div class="alert" ng-show="cartInfo">
+		<button type="button" class="close" data-dismiss="alert">&times;</button>
+		<strong>Warning!</strong>商品已加入购物车， <a href>查看</a>
+	</div>
+	-->
+
+	<div class="panel panel-success">
+		<div class="panel-heading">
+			<h4 class="panel-title">商品描述</h4>
+		</div>
+		<div class="panel-body" ng-bind-html="goods.goods_desc">
+
+		</div>
+	
+	</div>
+</div>

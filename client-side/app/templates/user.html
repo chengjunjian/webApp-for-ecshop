@@ -1,0 +1,32 @@
+<div ng-include="'templates/header.html'"></div>
+<div class="in-wrap"  >
+	
+	<div class="clearfix"></div>
+	<div>
+		<!-- 
+		<img ng-src="{{userInfo.avatar}}" class="img-thumbnail pull-left" width="60px" height="60px" style="margin-right:10px"/>
+		-->
+		<h3 class="f20 orange">{{userInfo.user_name}}</h3>
+		<p class="f12 gray">{{userInfo.email}}</p>
+	</div>
+	<div class="blank5"></div>
+	<div class="u3">
+		<span><label class="gray">余额</label><br/>{{userInfo.user_money}}</span>
+		<span><label class="gray">积分</label><br/>{{userInfo.pay_points}} </span>
+		<span><label class="gray">等级积分</label><br/>{{userInfo.rank_points}}</span>
+		
+	</div>
+	<div class="blank20"></div>
+	<div class="list-group">
+		<a class="list-group-item" href="#/collection">我的收藏
+			<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+		</a>
+		<a class="list-group-item" href=>消费记录
+			<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+		</a>
+
+	</div>
+
+	<div class="blank20"></div>
+	<button type="button" class="btn btn-warning btn-block" ng-click="logout()">退出登录</button>
+</div>

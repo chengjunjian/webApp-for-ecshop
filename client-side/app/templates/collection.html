@@ -1,0 +1,22 @@
+<div ng-include="'templates/header2.html'"></div>
+<div class="in-wrap">
+  
+	<div class="alert alert-warning" ng-hide="collection.length">没有任何收藏</div>
+	<div class="list-group" >
+		<div href="#/goods/{{s.goods_id}}" class="list-group-item rec{{s.rec_id}}" ng-repeat="s in collection" >
+			<span class="glyphicon glyphicon-remove pull-right list-icon-r red" ng-click="delete({{s.rec_id}})"></span>
+			<!-- 
+			<a href="#/goods/{{s.goods_id}}" >
+				<img ng-src="{{server_path}}{{s.goods_img}}" width="40px" height="40px" class="pull-left mr10" />
+			</a>
+			-->
+			<h4 class="list-group-item-heading"><a href="#/goods/{{s.goods_id}}" >{{s.goods_name}}</a></h4>
+
+	   	 <p class="list-group-item-text f12 gray" >{{s.shop_price}}</p>
+		</div>
+	</div>
+
+	<div class="blank10"></div>
+
+
+</div>

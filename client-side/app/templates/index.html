@@ -1,0 +1,31 @@
+<div ng-include="'templates/header.html'"></div>
+
+<div>
+	<img src="images/pic01.jpg" />
+</div>
+<div class="blank10"></div>
+
+<div class="in-wrap">
+<form class="form-inline" role="form">
+	<input type="keyword" class="form-control" id="search_text" placeholder="search" style="width:70%;display:inline-block">
+	<button type="submit" class="btn btn-info" ng-click="search()" >搜一搜</button>
+</form>
+
+<div class="blank10"></div>
+<h5><span class="glyphicon glyphicon-list"></span>&nbsp 精品推荐</h5>
+<div class="list-group" >
+	<a href="#/goods/{{s.id}}" class="list-group-item" ng-repeat="s in goodsList">
+		<span class="glyphicon glyphicon-chevron-right pull-right list-icon-r"></span>
+		<img ng-src="{{server_path}}{{s.goods_img}}" width="40px" height="40px" class="pull-left mr10" />
+		<h4 class="list-group-item-heading">{{s.name}}</h4>
+		<!--
+		<div class="clearfix" style="margin-bottom:5px">
+	      <span class="star-point point{{s.comment_rst}}"></span> <span class="gray">111</span>
+	    </div> -->
+    <p class="list-group-item-text f12 gray" >{{s.shop_price}}</p>
+	</a>
+</div>
+</div>
+
+
+
